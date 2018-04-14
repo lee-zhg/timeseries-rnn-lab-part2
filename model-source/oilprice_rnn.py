@@ -11,7 +11,7 @@ from emetrics import EMetrics
 import pandas as pd
 from math import sqrt
 import numpy as np
-from sklearn.preprocessing import MinMaxScaler
+# from sklearn.preprocessing import MinMaxScaler
 
 
 
@@ -112,8 +112,10 @@ data = pd.read_csv(input_data_path, index_col='DATE')
 # Create a scaled version of the data with oil prices normalized between 0 and 1
 values = data['WCOILWTICO'].values.reshape(-1,1)
 values = values.astype('float32')
-scaler = MinMaxScaler(feature_range=(0, 1))
-scaled = scaler.fit_transform(values)
+#scaler = MinMaxScaler(feature_range=(0, 1))
+#scaled = scaler.fit_transform(values)
+# turn off scaler to simplify running model on future data
+scaled = values
 
 # Split the data between training and testing 
 # The first 70% of the data is used for training while the remaining 30% is used for validation
