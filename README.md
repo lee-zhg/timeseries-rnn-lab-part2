@@ -65,7 +65,7 @@ Your code  will need access to Cloud Object Storage in this lab. An instance of 
 
 2.6 Click on the Watson Machine Learning instance you just created 
 
-2.7 Select **Service credentials** and then click on View credentials for the one set of credentials already there.
+2.7 Select **Service credentials** and then click on **View credentials** for the one set of credentials already there.
 
 ![WML credentials](images/ss9.png)
 
