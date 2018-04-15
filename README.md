@@ -13,23 +13,26 @@ This Watson Studio labs continues working with the RNN developed in  [Part 1](ht
    ii. Create a Watson Studio Project
 
 
-### 1 Add Cloud Object Storage credentials for your code
+### 1. Add Cloud Object Storage credentials for your code
 
 Your code  will need access to Cloud Object Storage in this lab. An instance of Cloud Object Storage  will have been created for you when you created the Watson Studio Project in Part 1. 
 
-1.1 In [Watson Studio](https://dataplatform.ibm.com/home?context=analytics) select **Services->Data Services**
+1.1 In Sign in to the [IBM Cloud](https://bluemix.net) with the same credentials you use for Watson Studio. You should be seeing the Dashboard:
 
-![Data Services](images/ss0.png)
+![Dashboard](images/ssV2.2.png)
+
+**Note:** If you're not seeing the **Dashboard** click on the **Menu** icon and select **Dashboard** from  the context menu.
+
+![Menu](images/ssv2.3.png)
+
+1.2 Scroll down to the **Services** section and click on your instance of Cloud Object Storage 
+
+![COS Instance](images/ssV2.4.png)
 
 
-1.2 Click on your instance of Cloud Object Storage (this will take you to a new browser tab)
+1.3 Click  on **Service Credentials** and then on **New credential** as shown in the screenshot below:
 
-![COS Instance](images/ss1.1.png)
-
-
-1.3 Click on **Manage**, then click on **Service Credentials** and then on **New credential** as shown in the screenshot below:
-
-![New credential](images/ss1.2.png)
+![New credential](images/ssV2.5.png)
 
 
 1.4 Type in the JSON string ```{"HMAC": true}``` in the field **Add Inline Configuration Parameters** and then click **Add**
@@ -42,9 +45,9 @@ Your code  will need access to Cloud Object Storage in this lab. An instance of 
 ![Save credential](images/ss4.png)
 
 
-### 2 Create an instance of the Watson Machine Learning service and associate it with your Wtason Studio Project
+### 2. Create an instance of the Watson Machine Learning service and associate it with your Wtason Studio Project
 
-2.1 Go back to your Watson Studio tab and select **Projects->Time Series RNN Demo**
+2.1 In a new browser tab go to  [Watson Studio](https://dataplatform.ibm.com), sign in if required, and then  select **Projects->Time Series RNN Demo**
 
 ![Back to project](images/ss5.png)
 
@@ -70,7 +73,7 @@ Your code  will need access to Cloud Object Storage in this lab. An instance of 
 ![WML credentials](images/ss9.png)
 
 
-2.8 Copy the JSON content to the  same text file you used to save the Cloud Object Storage credentials earlier.
+2.8 Copy the JSON content to the  same text file you used to save the Cloud Object Storage credentials earlier. You'll need this information when running your notebook later in the lab.
 
 
 ### 3. Create  and run this lab's notebook
