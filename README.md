@@ -8,7 +8,7 @@ This Watson Studio labs continues working with the RNN developed in  [Part 1](ht
 
 **Note:** If you haven't done  the lab in [Part 1](https://github.com/djccarew/timeseries-rnn-lab-part1) then follow the following steps in the [setup instructions for Part 1](https://github.com/djccarew/timeseries-rnn-lab-part1#setup) before continuing:
 
-   i. Sign if for Watson Studio (if you haven't already)
+   i. Sign up  for Watson Studio (if you haven't already)
    
    ii. Create a Watson Studio Project
 
