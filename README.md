@@ -17,13 +17,13 @@ This Watson Studio labs continues working with the RNN developed in  [Part 1](ht
 
 Your code  will need access to Cloud Object Storage in this lab. An instance of Cloud Object Storage  will have been created for you when you created the Watson Studio Project in Part 1. 
 
-1.1 In Sign in to the [IBM Cloud](https://bluemix.net) with the same credentials you use for Watson Studio. You should be seeing the Dashboard:
+1.1 Sign in to the [IBM Cloud](https://bluemix.net) with the same credentials you use for Watson Studio. You should be seeing the Dashboard:
 
 ![Dashboard](images/ssV2.2.png)
 
 **Note:** If you're not seeing the **Dashboard** click on the **Menu** icon and select **Dashboard** from  the context menu.
 
-![Menu](images/ssv2.3.png)
+![Menu](images/ssV2.3.png)
 
 1.2 Scroll down to the **Services** section and click on your instance of Cloud Object Storage 
 
@@ -45,7 +45,7 @@ Your code  will need access to Cloud Object Storage in this lab. An instance of 
 ![Save credential](images/ss4.png)
 
 
-### 2. Create an instance of the Watson Machine Learning service and associate it with your Wtason Studio Project
+### 2. Create an instance of the Watson Machine Learning service and associate it with your Watson Studio Project
 
 2.1 In a new browser tab go to  [Watson Studio](https://dataplatform.ibm.com), sign in if required, and then  select **Projects->Time Series RNN Demo**
 
@@ -66,7 +66,11 @@ Your code  will need access to Cloud Object Storage in this lab. An instance of 
 
 2.5 From the Watson Studio menu bar at the top select **Services->Watson Services**
 
+![Watson Services](images/ssV2.6.png)
+
 2.6 Click on the Watson Machine Learning instance you just created 
+
+![WML instance](images/ssV2.7.png)
 
 2.7 Select **Service credentials** and then click on **View credentials** for the one set of credentials already there.
 
