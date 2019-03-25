@@ -2,13 +2,13 @@
 
 ## Part 2 - Hyperparameter optimization, model deployment and scoring with Watson Studio
 
-This Watson Studio labs continues working with the RNN developed in  [Part 1](https://github.com/djccarew/timeseries-rnn-lab-part1). It contains the steps and code to demonstrate support of deep learning experiments in Watson Machine Learning Service. It illustrates the use of  the  Watson Machine Learning Python API for getting data, experiment definition, hyper parameter optimization, model persistence, model deployment and scoring.
+This Watson Studio labs continues working with the RNN developed in  [Part 1](https://github.com/justinmccoy/timeseries-rnn-lab-part1). It contains the steps and code to demonstrate support of deep learning experiments in Watson Machine Learning Service. It illustrates the use of  the  Watson Machine Learning Python API for getting data, experiment definition, hyper parameter optimization, model persistence, model deployment and scoring.
 
 ## Setup
 
-**Note:** If you haven't done  the lab in [Part 1](https://github.com/djccarew/timeseries-rnn-lab-part1) then follow the following steps in the [setup instructions for Part 1](https://github.com/djccarew/timeseries-rnn-lab-part1#setup) before continuing:
+**Note:** If you haven't done  the lab in [Part 1](https://github.com/justinmccoy/timeseries-rnn-lab-part1) then follow the following steps in the [setup instructions for Part 1](https://github.com/justinmccoy/timeseries-rnn-lab-part1#setup) before continuing:
 
-   i. Sign up  for Watson Studio (if you haven't already)
+   i. Sign up for Watson Studio (if you haven't already)
    
    ii. Create a Watson Studio Project
 
@@ -17,7 +17,7 @@ This Watson Studio labs continues working with the RNN developed in  [Part 1](ht
 
 Your code  will need access to Cloud Object Storage in this lab. An instance of Cloud Object Storage  will have been created for you when you created the Watson Studio Project in Part 1. 
 
-1.1 Sign in to the [IBM Cloud](https://bluemix.net) with the same credentials you use for Watson Studio. You should be seeing the Dashboard:
+1.1 Sign in to the [IBM Cloud](https://cloud.ibm.com) with the same credentials you use for Watson Studio. You should be seeing the Dashboard:
 
 ![Dashboard](images/ssV2.2.png)
 
@@ -92,7 +92,7 @@ Your code  will need access to Cloud Object Storage in this lab. An instance of 
 
 3.3 Name the Notebook *My Time Series RNN Demo Part 2* . Select **From URL** and copy the following URL into the **Notebook URL** field
 
-```https://raw.githubusercontent.com/djccarew/timeseries-rnn-lab-part2/master/oilpricernnpart2.ipynb```
+```https://raw.githubusercontent.com/justinmccoy/timeseries-rnn-lab-part2/master/oilpricernnpart2.ipynb```
 
 3.4 Click on **Create Notebook**. After a few seconds the notebook should be loaded
 
