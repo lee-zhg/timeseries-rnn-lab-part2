@@ -65,7 +65,7 @@ Your code  will need access to Cloud Object Storage in this lab. An instance of 
 
     click on the **New** tab , select the **Lite plan** and then click **Create**. Click on **Confirm** when prompted.
 
-2.5 From the Watson Studio menu bar at the top select **Services->Watson Services**
+2.5 From the Watson Studio menu (hamburger icon) ) at the top left select **Services->Watson Services**
 
 ![Watson Services](images/ssV2.6.png)
 
