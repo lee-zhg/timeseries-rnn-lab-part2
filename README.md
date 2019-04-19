@@ -1,4 +1,4 @@
-#  Predicting Oil Prices Using an RNN with Watson Studio 
+#  Predicting Oil Prices Using an RNN with Watson Studio
 
 ## Part 2 - Hyperparameter optimization, model deployment and scoring with Watson Studio
 
@@ -9,13 +9,13 @@ This Watson Studio labs continues working with the RNN developed in  [Part 1](ht
 **Note:** If you haven't done  the lab in [Part 1](https://github.com/justinmccoy/timeseries-rnn-lab-part1) then follow the following steps in the [setup instructions for Part 1](https://github.com/justinmccoy/timeseries-rnn-lab-part1#setup) before continuing:
 
    i. Sign up for Watson Studio (if you haven't already)
-   
+
    ii. Create a Watson Studio Project
 
 
 ### 1. Add Cloud Object Storage credentials for your code
 
-Your code  will need access to Cloud Object Storage in this lab. An instance of Cloud Object Storage  will have been created for you when you created the Watson Studio Project in Part 1. 
+Your code  will need access to Cloud Object Storage in this lab. An instance of Cloud Object Storage  will have been created for you when you created the Watson Studio Project in Part 1.
 
 1.1 Sign in to the [IBM Cloud](https://cloud.ibm.com) with the same credentials you use for Watson Studio. You should be seeing the Dashboard:
 
@@ -25,7 +25,7 @@ Your code  will need access to Cloud Object Storage in this lab. An instance of 
 
 ![Menu](images/ssV2.3.png)
 
-1.2 Scroll down to the **Services** section and click on your instance of Cloud Object Storage 
+1.2 Scroll down to the **Services** section and click on your instance of Cloud Object Storage
 
 ![COS Instance](images/ssV2.4.png)
 
@@ -45,7 +45,7 @@ Your code  will need access to Cloud Object Storage in this lab. An instance of 
 ![Save credential](images/ss4.png)
 
 
-### 2. Create an instance of the Watson Machine Learning service and associate it with your Watson Studio Project
+### 2. Associate an instance of the Watson Machine Learning service  with your Watson Studio Project
 
 2.1 In a new browser tab go to  [Watson Studio](https://dataplatform.ibm.com), sign in if required, and then  select **Projects->Time Series RNN Demo**
 
@@ -57,18 +57,19 @@ Your code  will need access to Cloud Object Storage in this lab. An instance of 
 ![Settings](images/ss6.png)
 
 
-2.3 Scroll down to the **Associated services** section. click on **Add Service** and then select **Machine Learning**
+2.3 Scroll down to the **Associated services** section. Click on **Add Service**, select **Watson** and then click the **Add** link in the **Machine Learning** tile
 
-![Add WML](images/ss8.png)
+2.4 If the **Existing** tab is enabled click on it and then select your existing instance from the drop down. Click **Select**
 
+    else
 
-2.4 Click on **New**, select the **Lite plan** and then click **Create**. Click on **Confirm** when prompted.
+    click on the **New** tab , select the **Lite plan** and then click **Create**. Click on **Confirm** when prompted.
 
 2.5 From the Watson Studio menu bar at the top select **Services->Watson Services**
 
 ![Watson Services](images/ssV2.6.png)
 
-2.6 Click on the Watson Machine Learning instance you just created 
+2.6 Click on the Watson Machine Learning instance you just created
 
 ![WML instance](images/ssV2.7.png)
 
@@ -84,7 +85,7 @@ Your code  will need access to Cloud Object Storage in this lab. An instance of 
 
 3.1 Go back to your Watson Studio tab and select **Projects->Time Series RNN Demo**
 
-3.2 Click on the **Assets** tab 
+3.2 Click on the **Assets** tab
 
 ![Assets](images/ss3.png)
 
@@ -98,4 +99,4 @@ Your code  will need access to Cloud Object Storage in this lab. An instance of 
 
 ![Notebook loaded](images/ss10.png)
 
-3.5 Follow the instructions in the notebook to complete the exercise. 
+3.5 Follow the instructions in the notebook to complete the exercise.
