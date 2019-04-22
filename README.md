@@ -21,7 +21,7 @@ Your code  will need access to Cloud Object Storage in this lab. An instance of 
 
 ![Dashboard](images/ssV2.2.png)
 
-1.2 Scroll down to the **Services** section and click on your instance of Cloud Object Storage
+1.2 In the **Storage** section click on your instance of Cloud Object Storage
 
 ![COS Instance](images/ssV2.4.png)
 
