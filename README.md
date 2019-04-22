@@ -17,13 +17,9 @@ This Watson Studio labs continues working with the RNN developed in  [Part 1](ht
 
 Your code  will need access to Cloud Object Storage in this lab. An instance of Cloud Object Storage  will have been created for you when you created the Watson Studio Project in Part 1.
 
-1.1 Sign in to the [IBM Cloud](https://cloud.ibm.com) with the same credentials you use for Watson Studio. You should be seeing the Dashboard:
+1.1 Sign in to the [IBM Cloud](https://cloud.ibm.com) with the same credentials you use for Watson Studio. Click on **Storage**
 
 ![Dashboard](images/ssV2.2.png)
-
-**Note:** If you're not seeing the **Dashboard** click on the **Menu** icon and select **Dashboard** from  the context menu.
-
-![Menu](images/ssV2.3.png)
 
 1.2 Scroll down to the **Services** section and click on your instance of Cloud Object Storage
 
@@ -35,7 +31,7 @@ Your code  will need access to Cloud Object Storage in this lab. An instance of 
 ![New credential](images/ssV2.5.png)
 
 
-1.4 Type in the JSON string ```{"HMAC": true}``` in the field **Add Inline Configuration Parameters** and then click **Add**
+1.4 Check **Include HMAC Credential** and then click **Add**
 
 ![Add new credential](images/ss3.1.png)
 
@@ -56,24 +52,21 @@ Your code  will need access to Cloud Object Storage in this lab. An instance of 
 
 ![Settings](images/ss6.png)
 
-
 2.3 Scroll down to the **Associated services** section. Click on **Add Service**, select **Watson** and then click the **Add** link in the **Machine Learning** tile
 
-2.4 If the **Existing** tab is enabled click on it and then select your existing instance from the drop down. Click **Select**
+2.4 If the **Existing** tab is enabled click on it and then select your existing instance from the drop down. Click **Select** and skip to step 2.6.
 
-    else
+2.5 If you don't have an existing Machine Learning instance click on the **New** tab , select the **Lite plan** and then click **Create**. Click on **Confirm** when prompted.
 
-    click on the **New** tab , select the **Lite plan** and then click **Create**. Click on **Confirm** when prompted.
-
-2.5 From the Watson Studio menu (hamburger icon) ) at the top left select **Services->Watson Services**
+2.6 From the Watson Studio menu (hamburger icon) ) at the top left select **Services->Watson Services**
 
 ![Watson Services](images/ssV2.6.png)
 
-2.6 Click on the Watson Machine Learning instance you just created
+2.7 Click on the Watson Machine Learning instance you just created
 
 ![WML instance](images/ssV2.7.png)
 
-2.7 Select **Service credentials** and then click on **View credentials** for the one set of credentials already there.
+2.8 Select **Service credentials** and then click on **View credentials** for the one set of credentials already there.
 
 ![WML credentials](images/ss9.png)
 
@@ -93,7 +86,9 @@ Your code  will need access to Cloud Object Storage in this lab. An instance of 
 
 3.3 Name the Notebook *My Time Series RNN Demo Part 2* . Select **From URL** and copy the following URL into the **Notebook URL** field
 
-```https://raw.githubusercontent.com/justinmccoy/timeseries-rnn-lab-part2/master/oilpricernnpart2.ipynb```
+```
+https://raw.githubusercontent.com/ibm-ai-education/timeseries-rnn-lab-part2/master/oilpricernnpart2.ipynb
+```
 
 3.4 Click on **Create Notebook**. After a few seconds the notebook should be loaded
 
