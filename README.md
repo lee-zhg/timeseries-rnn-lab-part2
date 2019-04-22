@@ -43,9 +43,7 @@ Your code  will need access to Cloud Object Storage in this lab. An instance of 
 
 ### 2. Associate an instance of the Watson Machine Learning service  with your Watson Studio Project
 
-2.1 In a new browser tab go to  [Watson Studio](https://dataplatform.ibm.com), sign in if required, and then  select **Projects->Time Series RNN Demo**
-
-![Back to project](images/ss5.png)
+2.1 In a new browser tab go to  [Watson Studio](https://dataplatform.ibm.com), sign in if required, and then  select the project  **Time Series RNN Demo** from Part 1.
 
 
 2.2 Click on the **Settings** for your project
