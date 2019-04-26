@@ -150,6 +150,8 @@ history = model.fit(trainX, trainY, epochs=epochs, batch_size=batch_size, valida
 
 hpo.close()
 
+print("Training history:" + str(history.history))
+
 # Check out MSE, RMSE, MAE for  testing data
 testing_error = model.evaluate(testX, testY, verbose=0)
 print('Testing error: %.5f MSE (%.5f RMSE) %.5f MAE' % (testing_error[0], sqrt(testing_error[0]), testing_error[1]))
