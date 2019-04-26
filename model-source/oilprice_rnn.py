@@ -24,7 +24,7 @@ data_filename = "WCOILWTICO.csv"
 
 # writing the train model and getting input data
 if environ.get('DATA_DIR') is not None:
-    input_data_folder = environ.get('DATA_DIR') 
+    input_data_folder = environ.get('DATA_DIR')
     input_data_path = os.path.join(input_data_folder, data_filename)
 else:
      input_data_path= data_filename
@@ -71,7 +71,7 @@ def getCurrentSubID():
         return os.environ["SUBID"]
     else:
         return None
-        
+
 def gen_datasets(dataset, prev_periods=1):
     dataX, dataY = [], []
     for i in range(len(dataset) - prev_periods):
@@ -80,7 +80,7 @@ def gen_datasets(dataset, prev_periods=1):
         dataY.append(dataset[i + prev_periods, 0])
     print(len(dataY))
     return np.array(dataX), np.array(dataY)
-    
+
 class HPOMetrics(keras.callbacks.Callback):
     def __init__(self):
         self.emetrics = EMetrics.open(getCurrentSubID())
@@ -117,7 +117,7 @@ values = values.astype('float32')
 # turn off scaler to simplify running model on future data
 scaled = values
 
-# Split the data between training and testing 
+# Split the data between training and testing
 # The first 70% of the data is used for training while the remaining 30% is used for validation
 train_size = int(len(scaled) * 0.7)
 test_size = len(scaled) - train_size
@@ -146,7 +146,7 @@ model.compile(loss='mean_squared_error', optimizer='adam', metrics=['mae'])
 
 hpo = HPOMetrics()
 
-history = model.fit(trainX, trainY, epochs=epochs, batch_size=batch_size, validation_data=(testX, testY), verbose=0,  callbacks=[tensorboard, hpo], shuffle=False)
+history = model.fit(trainX, trainY, epochs=epochs, batch_size=batch_size, validation_data=(testX, testY),  callbacks=[tensorboard, hpo], shuffle=False)
 
 hpo.close()
 
@@ -157,4 +157,3 @@ print('Testing error: %.5f MSE (%.5f RMSE) %.5f MAE' % (testing_error[0], sqrt(t
 
 # save the model
 model.save(output_model_path)
-

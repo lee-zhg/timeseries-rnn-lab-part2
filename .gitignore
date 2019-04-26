@@ -1,3 +1,7 @@
 ## Mac specific meta-data
 .DS_Store
 **/.DS_Store
+model-source/__pycache__
+model-source/logs
+model-source/model
+model-source/WCOILWTICO.csv
