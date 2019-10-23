@@ -56,12 +56,12 @@ Your code  will need access to Cloud Object Storage in this lab. An instance of 
    - Select `Watson` and then 
    - Click the `Add` link in the `Machine Learning` tile.
 
-2.4 Select an existing `Machine Learning` instance.
+2.3.1 Option #1 - Select an existing `Machine Learning` instance.
    - Click on the `Existing` tab if it is enabled.
    - Select your existing instance from the drop down. 
    - Click `Select` and skip to step 2.6.
 
-2.5 Create a new `Machine Learning` instance if you don't have an existing Machine Learning instance.
+2.3.2 Option #2 - Create a new `Machine Learning` instance if you don't have an existing Machine Learning instance.
    - Click on the `New` tab.
    - Select the `Lite plan`.
    - Click the `Create`. 
