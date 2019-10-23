@@ -62,20 +62,22 @@ Your code  will need access to Cloud Object Storage in this lab. An instance of 
    - Click `Select` and skip to step 2.6.
 
 2.3.2 Option #2 - Create a new `Machine Learning` instance if you don't have an existing Machine Learning instance.
+
+This is alternative option if the option #1 is not available. If the steps in the option #1 have been completed, move to 2.4 below and continue.
    - Click on the `New` tab.
    - Select the `Lite plan`.
    - Click the `Create`. 
    - Click on `Confirm` when prompted. Change its name if necessary.
 
-2.6 From the Watson Studio menu (hamburger icon) ) at the top left select `Services->Watson Services`.
+2.4 From the Watson Studio menu (hamburger icon) ) at the top left select `Services->Watson Services`.
 
 ![Watson Services](images/ssV2.6.png)
 
-2.7 Click on the Watson Machine Learning instance you just associated with the Watson Studio instance.
+2.5 Click on the Watson Machine Learning instance you just associated with the Watson Studio instance.
 
 ![WML instance](images/ssV2.7.png)
 
-2.8 Retrieve credential of the Watson Machine Learning instance.
+2.6 Retrieve credential of the Watson Machine Learning instance.
    - Select `Service credentials`.
    - Click on `View credentials` for the one set of credentials already there.
    - Copy the JSON content to the  same text file you used to save the Cloud Object Storage credentials earlier. 
